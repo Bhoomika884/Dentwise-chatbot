@@ -4,7 +4,7 @@ let submitBtn = document.querySelector("#submit");
 
 // Gemini API setup
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
-const API_KEY = "AIzaSyCXiNbhow2gSDniw7Q8FmgU6NRG96KHEq4"; // 🔒 Replace with your API key
+const API_KEY = "you api Key"; // 🔒 Replace with your API key
 
 let user = {
   data: null,
@@ -105,3 +105,4 @@ submitBtn.addEventListener("click", () => handleChatResponse(prompt.value));
 prompt.addEventListener("keydown", (e) => {
   if (e.key === "Enter") handleChatResponse(prompt.value);
 });
+
